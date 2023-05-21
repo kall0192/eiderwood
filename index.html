@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="EIDERWOOD webshop. Mobile accessories are availible for purchase on this webshop">
+    <meta name="keywords" content="EIDERWOOD, webshop, mobile accessories, case, flipcover, screen protection, scandinavian">
+    <meta name="author" content="EIDERWOOD">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon/EIDERWOOD LOGO 34x34.png">
+    <title>Eiderwood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    /*Text animation on header image*/
+
+.eiderwood {
+    color: rgb(255, 255, 255);
+    font-size: 9vw;
+    font-weight: 500;
+    width: 120%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 10%;
+}
+
+.txt-rotate {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 7vw;
+}
+
+.header_video {
+    position: relative;
+    text-align: left;
+}
+
+.centered_text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+@media screen and (min-width: 500px) {
+    .centered_text {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .eiderwood {
+        font-size: 6vw;
+    }   
+
+    .txt-rotate {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .centered_text {
+        top: 55%;
+        left: 40%;
+    }
+
+    .eiderwood {
+        font-size: 3vw;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        width: 100%;
+        padding-left: 5%;
+    }   
+
+    .txt-rotate {
+        font-size: 1.5vw;
+        color: white;
+    }
+}
+
+/*Text animation on header image END*/
+</style>
+
+<body>
+
+    <section id="width">
+
+        <div class="header">
+            <div><a href="index.html"><img src="img/eiderwood-logo.png" alt="EIDERWOOD logo"></a></div>
+            <div><a href="index.html"><img src="img/icon/icons8-shopping-bag-50.png" style="float: right; width: 35%;" alt=""></a></div>
+            <div class="dropdown"><button class="dropbtn" style="float:right;"><a href="pages/mobilemenu.html"><img src="img/icon/icons8-menu.svg" style="float: right; width: 90%;" alt=""></a></button>
+            </div>
+        </div>
+
+
+
+
+        <div class="header_video">
+            <video src="img/video/mobile-video.mp4" autoplay loop playsinline muted style="object-position: bottom;"></video>
+                <div class="centered_text">
+                    <h1 class="eiderwood">EIDERWOOD <br> IS  <br> |
+                        <span class="txt-rotate" data-period="2000" data-rotate='[ "SCANDINAVIAN.", "PROTECTIVE.", "AFFORDABLE.", "THE SAFE CHOICE."]'></span>
+                    </h1>
+                </div>
+        </div>
+
+
+        <!--Sticky chat bar-->
+        <div class="chat">
+            <button class="chatbtn">
+                <img src="img/icon/chat-icon-blue.png" alt="">
+            </button>
+        </div>
+
+        <!--Search bar-->
+        
+        <form id="form" role="search">
+            <input type="search" id="query" name="q"
+             placeholder="Search"
+             aria-label="Search through site content">
+             <button><img src="img/icon/icons8-search.svg" style="width: 60%; display: block; margin: auto;" alt="Search"></button>
+        </form>
+
+        <!--Categories-->
+
+        <div class="category">
+            <img src="img/case-protection.png" alt="Phone case-protection">
+            <a href="../pages/cases.html"><button class="btn">Cases</button></a>
+        </div>
+        <div class="category">
+            <img src="img/screen-protection.png" alt="Phone screen-protection">
+            <a href="../pages/screenpro.html"><button class="btn">Screen Protection</button></a>
+        </div>
+        <div class="category">
+            <img src="img/flipcover-lukket.png" alt="Phone flipcover">
+            <a href="../pages/flipcover.html"><button class="btn">Flip Cover</button></a>
+        </div>
+
+        <!--Add-->
+
+        <div class="ad-container">
+            <h1>Have you seen our new cases?</h1>
+            <a href="pages/shop.html"><button style="box-shadow: 2px 4px 10px rgba(0, 0, 0, .5);">Check them out here</button></a>
+            <img src="img/livstilsbillede.jpg" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+    <footer>
+
+        <h2>Newsletter</h2>
+        <p>Sign up for our newsletter for the latest news, benefits and more!</p>
+        <div class="newsletter_container">
+            <div class="content">
+              <form class="subscription">
+                <input class="add-email" type="email" placeholder="E-mail">
+                <button class="submit-email" type="button">
+                  <span class="before-submit">Subscribe</span>
+                  <span class="after-submit">Thank you for subscribing!</span>
+                 </button>
+              </form>
+            </div>
+          </div>
+
+          <h2>Adress</h2>
+            <ul>
+                <li>Sindalsvej 3</li>
+                <li>8240</li>
+                <li>Risskov</li>
+                <li>Denmark</li>
+            </ul>
+
+          <h2>Contact</h2> 
+            <ul>
+                <li>+45 12 34 56 78</li>
+                <li>eiderwood@information.com</li>
+            </ul>
+
+            <div class="some">
+                <div class="some-child"><a href=""><img src="img/icon/fb-logo.svg" alt="Facebook"></a></div>
+                <div class="some-child"><a href=""><img src="img/icon/ig-logo.svg" alt="Instagram"></a></div>
+            </div>
+
+    </footer>
+
+
+    </section>
+
+    <section id="desktop-width">
+
+        <div class="header1">
+            <div><a href="pages/contact.html"><img src="img/icon/support.png" style="width: 5.3%; float: right" alt=""></a></div>
+            <div><a href="index.html"><img src="img/icon/icons8-shopping-bag-50.png" style="width: 55%; float: right" alt=""></a></div>
+        </div>
+
+
+        <div class="header">
+            <div style="width: 15%;"><a href="index.html"><img src="img/eiderwood-logo.png" style="width: 150px;" alt="EIDERWOOD logo"></a></div>
+        
+        <ul style="width: 5%;">
+            <li>
+                <a href="pages/shop.html">Shop&#9662;</a>
+                <ul class="dropdown">
+                    <li><a href="pages/cases.html">Cases</a></li>
+                    <li><a href="pages/screenpro.html">Screen Protection</a></li>
+                    <li><a href="pages/flipcover.html">Flipcover</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul style="width: 16%; text-align: end;">
+            <li>
+                <a href="pages/about.html">About EIDERWOOD</a>
+            </li>
+        </ul>
+            <div style="width: 0%;" >
+                <form id="form" role="search">
+                    <input type="search" id="query" name="q"
+                     placeholder="Search"
+                     aria-label="Search through site content">
+                     <button><img src="img/icon/icons8-search.svg" style="width: 60%; display: block; margin: auto;" alt="Search"></button>
+                </form>
+            </div>
+        </div>
+
+
+        
+        <div class="header_video">
+            <video src="img/video/desktop-video.mp4" style="width:1500px;" autoplay loop muted ></video> 
+                <div class="centered_text">
+                    <h1 class="eiderwood">EIDERWOOD IS
+                        <span class="txt-rotate" data-period="2000" data-rotate='[ "SCANDINAVIAN.", "PROTECTIVE.", "AFFORDABLE.", "THE SAFE CHOICE."]'></span>
+                    </h1>
+                </div>
+        </div>
+
+        <div class="desktop-category">
+            <div class="category">
+                <img src="img/case-protection.png" style="width: 100%;" alt="Phone case-protection">
+                <a href="../pages/cases.html"><button class="btn">Cases</button></a>
+            </div>
+            <div class="category">
+                <img src="img/screen-protection.png" style="width: 100%;" alt="Phone screen-protection">
+                <a href="../pages/screenpro.html"><button class="btn">Screen Protection</button></a>
+            </div>
+            <div class="category">
+                <img src="img/flipcover-lukket.png" style="width: 100%;" alt="Phone flipcover">
+                <a href="../pages/flipcover.html"><button class="btn">Flip Cover</button></a>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="ad-container-desktop">
+            <div class="ad-split">
+                <div class="item1"><h3>Have you seen our new cases?</h3></div>
+                <div class="item2"><a href="pages/shop.html"><button>Check them out here</button></a></div>
+            </div>
+            <div class="ad-split">
+                <a href=""><img src="img/livstilsbillede.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="desktop-footer">
+            <div class="desktop-footer-item">
+                <h2>Newsletter</h2>
+                <p>Sign up for our newsletter for the latest news, benefits and more!</p>
+                <div class="newsletter-desktop">
+                    <div class="content">
+                      <form class="subscription-desktop">
+                        <input class="add-email" type="email" placeholder="Email">
+                        <button class="submit-email-desktop" type="button">
+                          <span class="before-submit">Subscribe</span>
+                          <span class="after-submit">Thank you for subscribing!</span>
+                         </button>
+                      </form>
+                    </div>
+                  </div>
+                
+            </div>
+            <div class="desktop-footer-item">
+                <h2>Adress</h2>
+                <ul>
+                    <li>Sindalsvej 3</li>
+                    <li>8240</li>
+                    <li>Risskov</li>
+                    <li>Denmark</li>
+                </ul>
+            </div>
+            <div class="desktop-footer-item">
+                <h2>Contact</h2> 
+                <ul>
+                    <li>+45 12 34 56 78</li>
+                    <li>eiderwood@information.com</li>
+                </ul> 
+            </div>
+            <div class="desktop-footer-item">
+                <h2>Social media</h2> 
+                <div class="desktop-footer-item-some">
+                    <div class="some-child"><a href=""><img src="img/icon/fb-logo.svg" alt="Facebook"></a></div>
+                    <div class="some-child"><a href=""><img src="img/icon/ig-logo.svg" alt="Instagram"></a></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

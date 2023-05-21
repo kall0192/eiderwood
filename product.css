@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.logo{
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#ffffff;
+}
+
+
+.box{
+  color:white;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  position: absolute;
+  top: 1.8%;
+  right: 10.12%;
+  float: right;
+  cursor: pointer;
+}
+
+
+.cart-count{
+  position: absolute;
+  background-color: #2f3542;
+  top: -12px;
+  right: 0;
+  padding: 3px;
+  height: 20px;
+  width: 20px;
+  line-height:15px ;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+#cart-icon1{
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+img{
+  width: 100%;
+}
+
+.product-container{
+  max-width: 1200px;
+  padding: 4rem 0rem;
+  margin: auto;
+  width: 100%;
+}
+
+h2.title{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color:#ffffff;
+}
+
+.shop-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+  gap:1.5rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.product{
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  border-radius: 3px;
+}
+
+.pic{
+  overflow: hidden;
+}
+
+.pic:hover img{
+transform: scale(1.03);
+}
+
+.food-img{
+  transition: 0.4s;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.food-title{
+  font-size: 0.8vw;
+  font-weight: 500;
+  color:#000000;
+}
+
+.food-price{
+  font-size: 0.8vw;
+  font-weight:400;
+}
+
+.add-cart{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #000000;
+  color:white;
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.add-cart:hover{
+  background-color:rgba(222, 222, 222, 0.786);
+  color: black;
+}
+  
+
+.cart{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  z-index: 100;
+}
+
+.cart-active{
+  right:0;
+  transition: 0.5s;
+}
+
+.cart-title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom:20px ;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+}
+
+.cart-img{
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border:2px solid  rgba(0,0,0,0.1);
+  padding: 5px;
+}
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;  
+}
+
+.price-box{
+  display: flex;
+    justify-content: space-between; 
+}
+
+.cart-food-title{
+   font-size: 0.8vw;
+   color:#000000;
+   font-weight: 500;
+}
+
+.cart-price{
+  font-size: 0.8vw;
+  font-weight:400;
+}
+
+.cart-quantity{
+  border:1px solid rgba(0,0,0,0.1);
+  outline:none ;
+  width: 2.4rem;
+  height: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove{
+  font-size: 24px;
+  color:red;
+  cursor: pointer;
+}
+
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.total-title{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price{
+  margin-left: 0.5rem;
+}
+
+.btn-buy{
+  padding: 12px 20px;
+  background-color:#2f3542;
+  color:#fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  height: 5%;
+}
+
+.btn-buy:hover {
+  background-color:#3e4556;
+}
+
+#cart-close{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .box {
+        color: white;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        position: absolute;
+        top: 4%;
+        right: 25%;
+        float: right;
+    }
+
+    .product {
+        width: 70%;
+        margin: 0% auto;
+    }
+
+    .food-title {
+        font-size: 1.4vw;
+    }
+
+    .shop-content {
+        margin-bottom: 10%;
+    }
+
+    .cart-food-title {
+        font-size: 2vw;
+        color: #000000;
+        font-weight: 500;
+    }
+
+    .cart-price {
+        font-size: 2vw;
+        font-weight: 400;
+    }
+
+    .food-price {
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .food-title {
+        font-size: 4vw;
+    }
+
+    .food-price {
+        font-size: 3vw;
+    }
+
+    .box {
+        color: white;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        position: absolute;
+        top: 2.5%;
+        right: 22%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .box {
+        color: white;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        position: absolute;
+        top: 2%;
+        right: 23%;
+        float: right;
+    }
+
+    .food-title {
+        font-size: 4vw;
+    }
+
+    .food-price {
+        font-size: 3vw;
+    }
+}
